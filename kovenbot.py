@@ -30,8 +30,8 @@ def main():
 
     def error(type, value, tb):
         cTime = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
-        logger.exception(str(cDate) + " - Uncaught exception: {0}".format(str(value)))
-        logger.exception(str(cDate) + "Content:" + str(response))
+        logger.exception(str(cTime) + " - Uncaught exception: {0}".format(str(value)))
+        logger.exception(str(cTime) + "Content:" + str(response))
 
     sys.excepthook = error
 
